@@ -5,9 +5,12 @@ namespace App;
 
 class Call
 {
-	
-	function __construct()
+	public $id = "";
+
+	function __construct($id = null)
 	{
-		# code...
+		if ($id != null) {
+			$this->id = $id;
+		}
 	}
 }
